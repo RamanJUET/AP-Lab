@@ -15,5 +15,6 @@ public class GetterSetter {
     int temp=myObj.nextInt();
     setVariable(temp);
     System.err.println(getterVariable());
+    myObj.close();
    }
 }
