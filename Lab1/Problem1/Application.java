@@ -1,5 +1,3 @@
-package Problem1;
-
 class MotherClass {
     int x = 10;
     void show() {
