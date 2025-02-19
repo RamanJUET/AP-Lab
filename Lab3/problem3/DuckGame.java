@@ -27,5 +27,6 @@ public class DuckGame {
         lakeDuck.performQuack();
         lakeDuck.performFly();
         lakeDuck.swim();
+        
     }
 } 

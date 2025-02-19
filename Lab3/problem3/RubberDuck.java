@@ -6,6 +6,7 @@ public class RubberDuck extends Duck {
         quackBehavior = new Squeak();
     }
     
+    
     public void display() {
         System.out.println("I'm a rubber duck");
     }

@@ -6,4 +6,5 @@ public class MuteQuack implements Quackable {
     public void makeSound() {
         System.out.println("<<Silence>>");
     }
+    
 } 

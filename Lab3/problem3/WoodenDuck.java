@@ -4,5 +4,6 @@ public class WoodenDuck extends Duck {
     public WoodenDuck() {
         flyBehavior = new CannotFly();
         quackBehavior = new MuteQuack();
+        
     }
 } 

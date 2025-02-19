@@ -5,4 +5,5 @@ public class LakeDuck extends Duck {
         flyBehavior = new CanFly();
         quackBehavior = new Quack();
     }
+    
 } 

@@ -22,5 +22,6 @@ public abstract class Duck {
     
     public void setQuackBehavior(Quackable qb) {
         quackBehavior = qb;
+        
     }
 } 
