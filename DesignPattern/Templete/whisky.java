@@ -9,12 +9,16 @@ public class whisky {
     private void AddWhisky(){
         System.out.println("Adding whisky");
     }
+    private void AddStir(){
+        System.out.println("Stirring");
+    }
     public void MakeDrink(){
         System.out.println("Making whisky");
         System.out.println("Take Glass");
         PoureIntoCup();
         AddIceWater();
         AddWhisky();
+        AddStir();
         System.out.println("Drink is ready");
     }
 

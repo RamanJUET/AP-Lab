@@ -12,6 +12,9 @@ public class Rum {
     private void AddRum(){
         System.out.println("Adding rum");
     }
+    private void AddStir(){
+        System.out.println("Stirring");
+    }
     public void MakeDrink(){
         System.out.println("Making rum");
         System.out.println("Take Glass");
@@ -19,6 +22,7 @@ public class Rum {
         AddSodaWater();
         AddSugar();
         AddRum();
+        AddStir();
         System.out.println("Drink is ready");
     }
 }
