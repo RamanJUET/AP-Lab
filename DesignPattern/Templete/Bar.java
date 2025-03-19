@@ -6,5 +6,8 @@ public class Bar {
         System.out.println("--------------------------------");
         Bear bear = new Bear();
         bear.MakeDrink();
+        System.out.println("--------------------------------");
+        whisky whisky = new whisky();
+        whisky.MakeDrink();
     }
 }
