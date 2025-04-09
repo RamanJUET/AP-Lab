@@ -12,3 +12,4 @@ public class Rum extends DecoratorClass{
         return OfferingObj.GivePrice()+50;
     }
 }
+

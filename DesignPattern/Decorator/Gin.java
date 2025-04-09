@@ -13,3 +13,4 @@ public class Gin extends DecoratorClass {
         return OfferingObj.GivePrice()+60;
     }
 }
+
