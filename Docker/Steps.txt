@@ -1,0 +1,39 @@
+Docker Demo
+
+1. docker pull hello-world
+   - Pulls the "hello-world" image from Docker Hub.
+
+2. docker run hello-world
+   - Runs the hello-world container to verify Docker installation.
+
+3. docker run -it ubuntu
+   - Launches an interactive Ubuntu container.
+
+4. exit
+   - Exits the running container shell.
+
+5. docker stop <id>
+   - Stops a running container by ID or name.
+
+---------------------------------------------------
+
+Docker Network
+
+Goal:
+- Let two containers (e.g., mongo, mongo-express) talk to each other seamlessly.
+
+Commands:
+
+1. docker network ls
+   - Lists available Docker networks.
+
+2. docker network create mongo-network
+   - Creates a user-defined bridge network.
+
+3. docker run -d -p 27017:27017 --name mongo --network mongo-network \
+   -e MONGO_INITDB_ROOT_USERNAME=admin \
+   -e MONGO_INITDB_ROOT_PASSWORD=admin mongo
+   - Runs MongoDB container on custom network with credentials.
+
+4. docker network inspect mongo-network
+   - Shows containers connected to mongo-network.

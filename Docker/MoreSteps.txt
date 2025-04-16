@@ -1,0 +1,45 @@
+# Pull the hello-world image to test Docker installation
+docker pull hello-world
+
+# Run the hello-world container to verify Docker is working
+docker run hello-world
+
+# Run an Ubuntu container interactively
+docker run -it ubuntu
+
+# Exit from the Ubuntu container
+exit
+
+# Stop a running container (replace <id> with actual container ID)
+docker stop <id>
+
+# Step to connect two containers (mongo and mongo-express) using a custom network
+
+# List existing Docker networks
+docker network ls
+
+# Create a new custom Docker network
+docker network create mongo-network
+
+# Confirm the new network was created
+docker network ls
+
+# Run the MongoDB container connected to the new network
+docker run -d -p 27017:27017 \
+  --name mongo \
+  --network mongo-network \
+  -e MONGO_INITDB_ROOT_USERNAME=admin \
+  -e MONGO_INITDB_ROOT_PASSWORD=admin \
+  mongo
+
+# Inspect the custom network to verify connection details
+docker network inspect mongo-network
+
+# Run mongo-express and connect it to the same network
+docker run -d -p 8081:8081 \
+  --name mongo-express \
+  --network mongo-network \
+  -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin \
+  -e ME_CONFIG_MONGODB_ADMINPASSWORD=admin \
+  -e ME_CONFIG_MONGODB_SERVER=mongo \
+  mongo-express
