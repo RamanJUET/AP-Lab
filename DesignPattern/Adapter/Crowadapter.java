@@ -7,14 +7,14 @@ public class Crowadapter implements swan{
     }
     @Override
     public void Sing() {
-        CrowObj.cry();
+        this.CrowObj.cry();
     }
     @Override
     public void eat() {
-        CrowObj.eat();
+        this.CrowObj.eat();
     }
     @Override
     public void Swim() {
-        CrowObj.fly();
+        this.CrowObj.fly();
     }
 }
